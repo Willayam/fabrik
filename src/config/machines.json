@@ -1,0 +1,66 @@
+{
+    "machines": [
+        {
+            "id": "raw_bin",
+            "name": "Raw Material Bin",
+            "processingTime": 0,
+            "variance": 0,
+            "inputType": null,
+            "outputType": "raw_metal",
+            "requiresOperator": false,
+            "inputSlots": 0,
+            "outputSlots": 999
+        },
+        {
+            "id": "stamper",
+            "name": "Stamper",
+            "processingTime": 10,
+            "variance": 2,
+            "inputType": "raw_metal",
+            "outputType": "stamped_piece",
+            "requiresOperator": true,
+            "inputSlots": 3,
+            "outputSlots": 3
+        },
+        {
+            "id": "bender",
+            "name": "Bender",
+            "processingTime": 12,
+            "variance": 3,
+            "inputType": "stamped_piece",
+            "outputType": "bracket",
+            "requiresOperator": true,
+            "inputSlots": 3,
+            "outputSlots": 3
+        },
+        {
+            "id": "sale_point",
+            "name": "Sale Point",
+            "processingTime": 0,
+            "variance": 0,
+            "inputType": "bracket",
+            "outputType": null,
+            "requiresOperator": false,
+            "salePrice": 50,
+            "inputSlots": 999,
+            "outputSlots": 0
+        }
+    ],
+    "itemTypes": [
+        {
+            "id": "raw_metal",
+            "name": "Raw Metal",
+            "color": "#888888"
+        },
+        {
+            "id": "stamped_piece",
+            "name": "Stamped Piece",
+            "color": "#ff6b6b"
+        },
+        {
+            "id": "bracket",
+            "name": "Bracket",
+            "color": "#4ecdc4"
+        }
+    ]
+}
