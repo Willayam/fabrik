@@ -75,12 +75,29 @@ function gaussianRandom(mean: number, stdDev: number): number {
 - **Inventory:** Items on floor + in machines (WIP count)
 - **Operating Expense:** Fixed costs per shift
 
+## Development Commands
+
+```bash
+# Install dependencies
+bun install
+
+# Run dev server (http://localhost:3000)
+bun run dev
+
+# Build for production
+bun run build
+
+# Preview production build
+bun run preview
+```
+
 ## Development Guidelines
 
 1. **Keep it simple:** No physics engine, use discrete slots
 2. **Teach through gameplay:** The bottleneck should emerge naturally
 3. **Progressive disclosure:** Lock advanced features behind progression
 4. **Test the feel:** Variance values should make piles form intuitively
+5. **Use Bun:** All package management and script execution uses Bun
 
 ## References
 
