@@ -34,8 +34,7 @@ export class BootScene extends Phaser.Scene {
     }
 
     create(): void {
-        // Start the game scene
-        this.scene.start('GarageScene');
-        this.scene.launch('UIScene');
+        // Start at the menu scene
+        this.scene.start('MenuScene');
     }
 }
