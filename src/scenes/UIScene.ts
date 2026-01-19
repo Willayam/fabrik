@@ -14,7 +14,6 @@ export class UIScene extends Phaser.Scene {
     private throughput = 0;
     private inventory = 0;
     private shiftTimeRemaining = 480; // 8 minutes = 8 in-game hours
-    private lastThroughput = 0;
 
     constructor() {
         super({ key: 'UIScene' });
